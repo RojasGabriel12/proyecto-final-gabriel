@@ -5,90 +5,21 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", serif;
-    background-color: rgb(2, 50, 9);
+    background-color: rgb(8, 145, 54);
 }
 
-/*HEADER*/
-header {
+
+
+.nav-link{
     display: flex;
-    flex-direction: column;
-    background-color: rgb(8, 247, 8);
+    flex-wrap: wrap;
+
+
 }
 
 
-/* Estilos para dispositivos móviles */
-body {
-    font-size: 16px;
-    padding: 10px;
-}
-
-/* Media query para tabletas */
-@media (min-width: 600px) {
-    body {
-        font-size: 18px;
-        padding: 20px;
-    }
-}
-
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-        padding: 30px;
-    }
-}
 
 
-/* Estilos para dispositivos móviles */
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Media query para tabletas y computadoras de escritorio */
-@media (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/*SE CENTRALIZA EL MENU DE BUSQUEDA Y SE LO PERSONALIZA */
-.menu ul {
-    list-style: none;
-    text-align: center;
-}
-
-/* Estilos para dispositivos móviles */
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Media query para tabletas y computadoras de escritorio */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.menu ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.menu ul li a {
-    color: rgb(9, 249, 9);
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/*al pasar el mouse se cambia de color*/
-nav ul li a:hover {
-    color: blanchedalmond;
-}
 
 /*centralizacion de los titulo y color*/
 .subtitulo {
@@ -96,13 +27,9 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/*COLOR DEL TEXTO  DE LOS ARTICULOS DE LA PRIMERA PAGINA*/
-article p {
-    color: #fff5f5;
-
-}
 
 
+*/
 /*pie de pagina*/
 footer div p {
     background-color: rgb(23, 27, 240);
@@ -170,9 +97,3 @@ footer div p {
 }
 
 
-.navbar-brand img{
-    width: 25px;
-    display: flex;
-}
-
-   
