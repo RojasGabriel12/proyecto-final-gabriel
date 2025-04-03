@@ -1,0 +1,169 @@
+/* imprenta que se utiliza*/
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    ;
+    background-color: rgb(31, 125, 83)
+}
+
+/* utilizacion de grid en el inicio*/
+.subtitulo {
+    text-align: center;
+}
+
+.conter {
+    padding: 20px;
+}
+
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px
+}
+
+
+
+
+/*grid de auto*/
+
+.contenedor-auto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/*grid camionetas*/
+.contenedor-camionetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/*grid motos*/
+.contenedor-motos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* grid cuatri*/
+.contenedor-cuatri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+@media (max-width:991px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:480px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+
+
+
+
+/*responsive auto*/
+@media (max-width:991px) {
+    .contenedor-auto {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:480px) {
+    .contenedor-auto {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+/*responsive camionetas*/
+
+@media (max-width:991px) {
+
+    .contenedor-camionetas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:480px) {
+    .contenedor-camionetas {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+
+
+/*responsive motos*/
+@media (max-width:991px) {
+    .contenedor-motos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:480px) {
+    .contenedor-motos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/*responsive cuatri*/
+
+@media (max-width:991px) {
+    .contenedor-cuatri {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:480px) {
+    .contenedor-cuatri {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 20px;
+}
