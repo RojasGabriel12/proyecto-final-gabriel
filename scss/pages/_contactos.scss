@@ -1,0 +1,93 @@
+@use"../componentes/media-queries";
+@use"sass:map";
+@use"../utilities/maps";
+
+
+
+/*=========== CONTACTO SECCION ===========*/
+
+
+  
+
+.form {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  container-name: form;
+  container-type: inline-size;
+
+  .form_titulo {
+    font-size: 3rem;
+  }
+
+  // Media query para dispositivos grandes
+  @include media-queries.destock1 {
+    .form_form {
+      padding: 12px;
+      max-width: 600px;
+      width: 100%;
+      display: grid;
+      margin-bottom: 30px;
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name lastname"
+        "email  email"
+        "message  message"
+        "button button";
+      gap: 12px;
+      background-image: radial-gradient(#18233f06, #18233f22);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 40px #0006;
+
+      .form_input-container:first-child {
+        grid-area: name;
+      }
+
+      .form_input-container:nth-child(2) {
+        grid-area: lastname;
+      }
+
+      .form_input-container:nth-child(3) {
+        grid-area: email;
+      }
+
+      .form_input-container:nth-child(4) {
+        grid-area: message;
+      }
+
+      .form_input-container:nth-child(5) {
+        grid-area: button;
+      }
+
+      .form_input-container :is(input, textarea) {
+        box-shadow: none;
+        border-radius: 6px;
+      }
+
+      textarea {
+        resize: none;
+        min-height: 120px;
+        font-family: inherit;
+      }
+
+      input[type="submit"] {
+        padding: 12px;
+        background-color: #48e;
+      }
+
+      &:is(input, textarea) {
+        width: 100%;
+        padding: 9px;
+        font-size: 12px;
+        margin: 4px;
+        border: none;
+        box-shadow: 2px 2px 4px #0003;
+      }
+    }
+  }
+}

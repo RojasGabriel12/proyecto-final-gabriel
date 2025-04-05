@@ -1,0 +1,40 @@
+@mixin flex($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@mixin fadeIn($duration) {
+    animation: fadeIn $duration ease-in-out;
+}
+
+
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideleft {
+    animation: slideLeft 0.7s ease-in-out;
+}
