@@ -1,0 +1,53 @@
+@use"sass:map";
+
+@use "../componentes/media-queries";
+
+
+/*=============   TEXTO DE  LOS  ARTICLE  ==========*/
+
+@include media-queries.mobile1 {
+  .contenedor1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+}
+
+
+
+
+
+@include media-queries.tablet2 {
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@include media-queries.destock2 {
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.card {
+  width: 18rem;
+
+  .card-titulo {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+}

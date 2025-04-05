@@ -1,0 +1,16 @@
+@use"../utilities/maps"as tamanios;
+@use "../utilities/mixins";
+
+
+/*============ footer  ================ */
+footer div p {
+    width: 100%;
+    padding: map-get(tamanios.$tamanios, espacio-chico);
+    margin-top: map-get(tamanios.$tamanios, espacio);
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(244, 247, 244);
+    @include mixins.flex(flex, column, center, center);
+    @include mixins.fadeIn(1s);
+ }
+

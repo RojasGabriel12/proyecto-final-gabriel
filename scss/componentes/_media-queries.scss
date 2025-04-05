@@ -1,0 +1,37 @@
+
+
+/*====================   MEDIA QUERIES// CONTACTO ==================*/
+
+@mixin destock1 {
+@container form (min-width: 56.25rem) {
+  @content;
+}
+}
+    
+
+  /*===========  MEDIA QUERIES DE INICIO// PANTALLA PEQUEÑA ==========*/
+  @mixin tablet1{
+@media (max-width:768px) {
+@content;
+}
+  }
+
+
+
+  @mixin mobile1 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet2 {
+    @media (min-width: 769px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin destock2 {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
