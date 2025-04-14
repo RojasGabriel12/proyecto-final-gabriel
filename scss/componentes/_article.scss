@@ -1,4 +1,5 @@
 @use"sass:map";
+@use"../utilities/maps"as tamanios;
 
 @use "../componentes/media-queries";
 
@@ -10,7 +11,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: map-get(tamanios.$tamanios, espacio-chico);
 
   }
 }
@@ -23,7 +24,7 @@
   .contenedor1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: map-get(tamanios.$tamanios, espacio-chico);
   }
 }
 
@@ -31,7 +32,7 @@
   .contenedor1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: map-get(tamanios.$tamanios, espacio-chico);
   }
 }
 
