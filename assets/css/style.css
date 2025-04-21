@@ -53,6 +53,7 @@
 }
 .card {
   width: 18rem;
+  overflow: hidden;
 }
 .card .card-titulo {
   font-size: 1.3rem;
@@ -93,6 +94,7 @@ main .contenedor1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1024px;
+  overflow: hidden;
   animation: fadeIn 1s ease-in-out;
 }
 main .contenedor2 {
@@ -100,6 +102,7 @@ main .contenedor2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1024px;
+  overflow: hidden;
 }
 
 /*============ footer  ================ */

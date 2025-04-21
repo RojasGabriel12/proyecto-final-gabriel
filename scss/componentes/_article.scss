@@ -38,6 +38,7 @@
 
 .card {
   width: 18rem;
+  overflow: hidden;
 
   .card-titulo {
     font-size: 1.3rem;
@@ -46,8 +47,8 @@
 
   .card-text {
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+    padding: map-get(tamanios.$tamanios, sin-espacio);
+    margin: map-get(tamanios.$tamanios, sin-espacio);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
