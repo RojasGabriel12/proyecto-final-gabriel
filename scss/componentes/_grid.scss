@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use"sass:map";
 @use"../utilities/maps"as tamanios;
 @use"../utilities/mixins";
@@ -24,4 +25,30 @@ main {
     overflow: hidden;
   }
 
+=======
+@use"sass:map";
+@use"../utilities/maps";
+@use"../utilities/mixins";
+
+/*=============    grid auto/camionetas/motos/cuatri    ==================*/
+
+main {
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1024px;
+    @include mixins.fadeIn(1s);
+
+  }
+
+
+  .contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1024px;
+  }
+
+>>>>>>> a9bdfe3e7458eb76e3b1500b86e59903aa35c311
 }

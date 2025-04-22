@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use "base/generales";
 
 @use "componentes/article";
@@ -9,3 +10,15 @@
 @use "utilities/mixins";
 @use "utilities/maps";
 @use "utilities/extends";
+=======
+@use "base/generales";
+
+@use "componentes/article";
+@use "componentes/grid";
+@use "componentes/media-queries";
+@use "componentes/footer";
+
+@use "pages/contactos";
+@use "utilities/mixins";
+@use "utilities/maps"
+>>>>>>> a9bdfe3e7458eb76e3b1500b86e59903aa35c311
